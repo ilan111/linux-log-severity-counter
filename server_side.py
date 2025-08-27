@@ -12,13 +12,6 @@ def run_local_command(command):
         print(f"Command '{command}' returned non-zero exit status {e.returncode}")
         print(f"Error output: {e.stderr}")
 
-# def grep_lines_counter(keyword, path_to_file):
-#     try:
-#         return run_local_command(f'grep "{keyword}" {path_to_file} | wc -l')
-    
-#     except Exception as e:
-#         return f"Error: {e}"
-
 def main():
     data = {}
     info_count = 0
